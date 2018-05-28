@@ -1,0 +1,20 @@
+#! /bin/sh
+# Script ejemplo para arranque de servicios en /etc/init.d/
+#
+
+case "$1" in
+start)
+echo "Iniciando demonio... "
+# Aquí comando a ejecutar para arrancar el servicio
+/home/victor/inicio.sh
+;;
+stop)
+echo "Deteniendo demonio..."
+# Aquí comando a ejecutar para detener el servicio
+;;
+*)
+echo "Modo de empleo: /etc/init.d/mi_script {start|stop}"
+exit 1
+;;
+esac
+exit 0
