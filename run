@@ -1,0 +1,8 @@
+cat data > /etc/init.d/inicio
+echo "#ejecuta lo que quieras"  > /home/victor/inicio.sh
+sudo chmod +x inicio
+sudo chmod +x /home/victor/inicio.sh
+cd /etc/init.d/
+sudo update-rc.d inicio defaults
+sudo update-rc.d inicio enable
+echo "Terminado, reinicia"
